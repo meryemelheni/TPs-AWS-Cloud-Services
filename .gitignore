@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# AWS / Keys
+*.pem
+
+# LocalStack
+.localstack/
+
+# OS
+.DS_Store
+Thumbs.db

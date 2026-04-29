@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Infrastructure as Code - Lab 05 (CloudFormation version)'
+
+Resources:
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Sub 'my-cfn-bucket-${AWS::AccountId}'
+      VersioningConfiguration:
+        Status: Enabled
+
+  MySQSQueue:
+    Type: 'AWS::SQS::Queue'
+    Properties:
+      QueueName: 'my-cfn-queue'
+
+  MySNSTopic:
+    Type: 'AWS::SNS::Topic'
+    Properties:
+      TopicName: 'my-cfn-topic'
+
+Outputs:
+  BucketName:
+    Description: 'The name of the S3 bucket'
+    Value: !Ref MyS3Bucket
+  QueueUrl:
+    Description: 'The URL of the SQS queue'
+    Value: !Ref MySQSQueue
+  TopicArn:
+    Description: 'The ARN of the SNS topic'
+    Value: !Ref MySNSTopic
