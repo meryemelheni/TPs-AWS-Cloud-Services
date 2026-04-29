@@ -162,5 +162,5 @@ awslocal cloudformation describe-stacks --stack-name my-stack
 Ce projet démontre la capacité à déployer une architecture cloud complète de manière reproductible et sécurisée. Les principes de couplage faible et de moindre privilège ont été appliqués tout au long des Labs.
 
 ---
-**Auteur :** Amal356  
-**Lien GitHub :** [https://github.com/Amal356/TPs-AWS-Cloud-Services.git](https://github.com/Amal356/TPs-AWS-Cloud-Services.git)
+**Auteur :** meryemelheni  
+**Lien GitHub :** [https://github.com/meryemelheni/TPs-AWS-Cloud-Services.git](https://github.com/meryemelheni/TPs-AWS-Cloud-Services.git)
